@@ -20,7 +20,7 @@
 # Go workspace file
 go.work
 
-# Some ignores from Quasar and npm cruft
+# temp files and build outputs
 .DS_Store
 .Thumbs.db
 debug.log
@@ -28,4 +28,7 @@ ui/.vscode/
 node_modules/
 yarn.lock
 package-lock.json
-.quasar
+
+# vitepress build outputs
+pages/.vitepress/dist
+pages/.vitepress/cache
