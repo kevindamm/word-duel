@@ -23,5 +23,18 @@ export default defineNuxtConfig({
     }
   },
 
-  modules: ["nitro-cloudflare-dev"]
+  eslint: {
+    config: {
+      stylistic: {
+        semi: false,
+        quotes: 'single',
+        commaDangle: 'always-multiline',
+      },
+    },
+  },
+
+  modules: [
+    "nitro-cloudflare-dev",
+    "@nuxt/eslint"
+  ]
 })
